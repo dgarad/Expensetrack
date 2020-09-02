@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="workspace_user" name="workspace_user">3bf8d5b65344130084acddeeff7b122b</contains>
+        <role display_value="expense_tracker" name="expense_tracker">608becdcdb4f10103de258b3ca9619ed</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-08-31 08:06:33</sys_created_on>
+        <sys_id>648b2010db8f10103de258b3ca961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>workspace_user.expense_tracker</sys_name>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name>sys_user_role_contains_648b2010db8f10103de258b3ca961941</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-08-31 08:06:33</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

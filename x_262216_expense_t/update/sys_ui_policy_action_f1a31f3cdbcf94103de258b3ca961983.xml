@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>expense_date</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:38:34</sys_created_on>
+        <sys_id>f1a31f3cdbcf94103de258b3ca961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>expense_date</sys_name>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name>sys_ui_policy_action_f1a31f3cdbcf94103de258b3ca961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:38:34</sys_updated_on>
+        <table>x_262216_expense_t_expense_tracker</table>
+        <ui_policy display_value="make manatory">15635b78dbcf94103de258b3ca961936</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

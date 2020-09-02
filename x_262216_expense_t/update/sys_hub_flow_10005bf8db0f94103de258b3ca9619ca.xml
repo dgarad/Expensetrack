@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>expense_exceed__alert</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.expense_cost","label":"Trigger➛Expense Tracker Record➛Expense Cost","reference":"","reference_display":"Expense Cost","type":"integer","base_type":"integer","parent_table_name":"x_262216_expense_t_expense_tracker","column_name":"expense_cost"},{"name":"Created or Updated_1.current.expense_limit_cost","label":"Trigger➛Expense Tracker Record➛Expense Limit Cost","reference":"","reference_display":"Expense Limit Cost","type":"integer","base_type":"integer","parent_table_name":"x_262216_expense_t_expense_tracker","column_name":"expense_limit_cost"},{"name":"8f67e6c0-b8d1-4eae-9f4d-305034fdde97.email","label":"1.1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot>1f2293f8db8f94103de258b3ca9619e2</latest_snapshot>
+        <master_snapshot>1f2293f8db8f94103de258b3ca9619e2</master_snapshot>
+        <name>Expense Exceed  Alert  </name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>583257f8db8f94103de258b3ca96191b</remote_trigger_id>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:22:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>10005bf8db0f94103de258b3ca9619ca</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Expense Exceed  Alert  </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name>sys_hub_flow_10005bf8db0f94103de258b3ca9619ca</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:49</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=10005bf8db0f94103de258b3ca9619ca"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_262216_expense_t_expense_tracker">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>583257f8db8f94103de258b3ca96191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <table>x_262216_expense_t_expense_tracker</table>
+    </sys_flow_record_trigger>
+    <sys_hub_flow_component action="delete_multiple" query="flow=10005bf8db0f94103de258b3ca9619ca^sys_idNOT IN79211bfcdb4f94103de258b3ca9619ba,ed21d7fcdb4f94103de258b3ca9619c8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7d211bfcdb4f94103de258b3ca9619b9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:13</sys_created_on>
+        <sys_id>79211bfcdb4f94103de258b3ca9619ba</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:48</sys_updated_on>
+        <ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=79211bfcdb4f94103de258b3ca9619ba"/>
+    <sys_element_mapping action="delete_multiple" query="id=79211bfcdb4f94103de258b3ca9619ba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>79211bfcdb4f94103de258b3ca9619ba</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:13</sys_created_on>
+        <sys_id>35211bfcdb4f94103de258b3ca9619be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:30:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.expense_cost}}&gt;800</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</flow>
+        <order>1.1</order>
+        <parent_ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>ed21d7fcdb4f94103de258b3ca9619c8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:48</sys_updated_on>
+        <ui_id>8f67e6c0-b8d1-4eae-9f4d-305034fdde97</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ed21d7fcdb4f94103de258b3ca9619c8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ed21d7fcdb4f94103de258b3ca9619c8</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>35211bfcdb4f94103de258b3ca9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>&lt;p&gt;Hi ,&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;your daily Expense  Is exceed more than 800 Rs.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;thanks&lt;/p&gt;</value>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ed21d7fcdb4f94103de258b3ca9619c8</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>71211bfcdb4f94103de258b3ca9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>dharamrajgarad@gmail.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ed21d7fcdb4f94103de258b3ca9619c8</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>f5211bfcdb4f94103de258b3ca9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>Expense Exceed  Alert  </value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=10005bf8db0f94103de258b3ca9619ca^sys_idNOT INe921d7fcdb4f94103de258b3ca9619c3"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>e921d7fcdb4f94103de258b3ca9619c3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:48</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e921d7fcdb4f94103de258b3ca9619c3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e921d7fcdb4f94103de258b3ca9619c3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>ad21d7fcdb4f94103de258b3ca9619c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>e921d7fcdb4f94103de258b3ca9619c3</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>e521d7fcdb4f94103de258b3ca9619c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>x_262216_expense_t_expense_tracker</value>
+        <variable display_value="">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=10005bf8db0f94103de258b3ca9619ca^sys_idNOT INe0005bf8db0f94103de258b3ca9619cc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>10005bf8db0f94103de258b3ca9619ca</id>
+        <name>Expense Exceed  Alert  </name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:22:12</sys_created_on>
+        <sys_id>e0005bf8db0f94103de258b3ca9619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:22:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=10005bf8db0f94103de258b3ca9619ca^sys_idNOT IN74215bb0db4f94103de258b3ca96197e,892197fcdb4f94103de258b3ca9619f0,9d2197fcdb4f94103de258b3ca9619f5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</model>
+        <model_id>10005bf8db0f94103de258b3ca9619ca</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_10005bf8db0f94103de258b3ca9619ca</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:09</sys_created_on>
+        <sys_id>74215bb0db4f94103de258b3ca96197e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDe43257f8be8f9410a12adfa039a40a39,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</model>
+        <model_id>10005bf8db0f94103de258b3ca9619ca</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_10005bf8db0f94103de258b3ca9619ca</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:10</sys_created_on>
+        <sys_id>892197fcdb4f94103de258b3ca9619f0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</model>
+        <model_id>10005bf8db0f94103de258b3ca9619ca</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_10005bf8db0f94103de258b3ca9619ca</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:11</sys_created_on>
+        <sys_id>9d2197fcdb4f94103de258b3ca9619f5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=10005bf8db0f94103de258b3ca9619ca^sys_idNOT INed21d7fcdb4f94103de258b3ca9619c8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</flow>
+        <order>1.1</order>
+        <parent_ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>ed21d7fcdb4f94103de258b3ca9619c8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:48</sys_updated_on>
+        <ui_id>8f67e6c0-b8d1-4eae-9f4d-305034fdde97</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ed21d7fcdb4f94103de258b3ca9619c8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ed21d7fcdb4f94103de258b3ca9619c8</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>35211bfcdb4f94103de258b3ca9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>&lt;p&gt;Hi ,&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;your daily Expense  Is exceed more than 800 Rs.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;thanks&lt;/p&gt;</value>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ed21d7fcdb4f94103de258b3ca9619c8</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>71211bfcdb4f94103de258b3ca9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>dharamrajgarad@gmail.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ed21d7fcdb4f94103de258b3ca9619c8</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>f5211bfcdb4f94103de258b3ca9619b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <value>Expense Exceed  Alert  </value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=10005bf8db0f94103de258b3ca9619ca^sys_idNOT IN79211bfcdb4f94103de258b3ca9619ba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7d211bfcdb4f94103de258b3ca9619b9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:13</sys_created_on>
+        <sys_id>79211bfcdb4f94103de258b3ca9619ba</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:48</sys_updated_on>
+        <ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=79211bfcdb4f94103de258b3ca9619ba"/>
+    <sys_element_mapping action="delete_multiple" query="id=79211bfcdb4f94103de258b3ca9619ba"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>79211bfcdb4f94103de258b3ca9619ba</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:13</sys_created_on>
+        <sys_id>35211bfcdb4f94103de258b3ca9619be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:30:24</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.expense_cost}}&gt;800</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_10005bf8db0f94103de258b3ca9619ca^sys_idNOT IN192197fcdb4f94103de258b3ca9619f4,8d2197fcdb4f94103de258b3ca9619ee,e521d7fcdb4f94103de258b3ca9619c0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_10005bf8db0f94103de258b3ca9619ca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:11</sys_created_on>
+        <sys_id>192197fcdb4f94103de258b3ca9619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_10005bf8db0f94103de258b3ca9619ca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:10</sys_created_on>
+        <sys_id>8d2197fcdb4f94103de258b3ca9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_10005bf8db0f94103de258b3ca9619ca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:27:12</sys_created_on>
+        <sys_id>e521d7fcdb4f94103de258b3ca9619c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:27:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=10005bf8db0f94103de258b3ca9619ca^sys_idNOT INd43257f8db8f94103de258b3ca96191c"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>10005bf8db0f94103de258b3ca9619ca</plan_id>
+        <snapshot>1f2293f8db8f94103de258b3ca9619e2</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d43257f8db8f94103de258b3ca96191c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:46</sys_updated_on>
+        <trigger display_value="">583257f8db8f94103de258b3ca96191b</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>expense_exceed__alert</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.expense_cost","label":"Trigger➛Expense Tracker Record➛Expense Cost","reference":"","reference_display":"Expense Cost","type":"integer","base_type":"integer","parent_table_name":"x_262216_expense_t_expense_tracker","column_name":"expense_cost"},{"name":"Created or Updated_1.current.expense_limit_cost","label":"Trigger➛Expense Tracker Record➛Expense Limit Cost","reference":"","reference_display":"Expense Limit Cost","type":"integer","base_type":"integer","parent_table_name":"x_262216_expense_t_expense_tracker","column_name":"expense_limit_cost"},{"name":"8f67e6c0-b8d1-4eae-9f4d-305034fdde97.email","label":"1.1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Expense Exceed  Alert  </name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Expense Exceed  Alert  ">10005bf8db0f94103de258b3ca9619ca</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>1f2293f8db8f94103de258b3ca9619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:41</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=1f2293f8db8f94103de258b3ca9619e2"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=1f2293f8db8f94103de258b3ca9619e2^sys_idNOT IN003217f8db8f94103de258b3ca9619b3,443217f8db8f94103de258b3ca9619ba"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7d211bfcdb4f94103de258b3ca9619b9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:44</sys_created_on>
+        <sys_id>003217f8db8f94103de258b3ca9619b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:44</sys_updated_on>
+        <ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=003217f8db8f94103de258b3ca9619b3"/>
+    <sys_element_mapping action="delete_multiple" query="id=003217f8db8f94103de258b3ca9619b3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>003217f8db8f94103de258b3ca9619b3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:44</sys_created_on>
+        <sys_id>c03217f8db8f94103de258b3ca9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.expense_cost}}&gt;800</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</flow>
+        <order>1.1</order>
+        <parent_ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>443217f8db8f94103de258b3ca9619ba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <ui_id>8f67e6c0-b8d1-4eae-9f4d-305034fdde97</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=443217f8db8f94103de258b3ca9619ba"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>443217f8db8f94103de258b3ca9619ba</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>103217f8db8f94103de258b3ca9619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>dharamrajgarad@gmail.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>443217f8db8f94103de258b3ca9619ba</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>943217f8db8f94103de258b3ca9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>Expense Exceed  Alert  </value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>443217f8db8f94103de258b3ca9619ba</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>d03217f8db8f94103de258b3ca9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>&lt;p&gt;Hi ,&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;your daily Expense  Is exceed more than 800 Rs.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;thanks&lt;/p&gt;</value>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=1f2293f8db8f94103de258b3ca9619e2^sys_idNOT IN1c3217f8db8f94103de258b3ca9619ef"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>1c3217f8db8f94103de258b3ca9619ef</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:46</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1c3217f8db8f94103de258b3ca9619ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1c3217f8db8f94103de258b3ca9619ef</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>183217f8db8f94103de258b3ca9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>x_262216_expense_t_expense_tracker</value>
+        <variable display_value="">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1c3217f8db8f94103de258b3ca9619ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>543217f8db8f94103de258b3ca9619f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=1f2293f8db8f94103de258b3ca9619e2^sys_idNOT IN972293f8db8f94103de258b3ca9619e3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>1f2293f8db8f94103de258b3ca9619e2</id>
+        <name>Expense Exceed  Alert  </name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:41</sys_created_on>
+        <sys_id>972293f8db8f94103de258b3ca9619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=1f2293f8db8f94103de258b3ca9619e2^sys_idNOT IN1322d3f8db8f94103de258b3ca961931,eb22d3f8db8f94103de258b3ca9619c8,f72217f8db8f94103de258b3ca961929"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</model>
+        <model_id>1f2293f8db8f94103de258b3ca9619e2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1f2293f8db8f94103de258b3ca9619e2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:41</sys_created_on>
+        <sys_id>1322d3f8db8f94103de258b3ca961931</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD572293f81e8f94106cc4501aed57e1e4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</model>
+        <model_id>1f2293f8db8f94103de258b3ca9619e2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1f2293f8db8f94103de258b3ca9619e2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:42</sys_created_on>
+        <sys_id>eb22d3f8db8f94103de258b3ca9619c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</model>
+        <model_id>1f2293f8db8f94103de258b3ca9619e2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_1f2293f8db8f94103de258b3ca9619e2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:43</sys_created_on>
+        <sys_id>f72217f8db8f94103de258b3ca961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=1f2293f8db8f94103de258b3ca9619e2^sys_idNOT IN443217f8db8f94103de258b3ca9619ba"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</flow>
+        <order>1.1</order>
+        <parent_ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>443217f8db8f94103de258b3ca9619ba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <ui_id>8f67e6c0-b8d1-4eae-9f4d-305034fdde97</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=443217f8db8f94103de258b3ca9619ba"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>443217f8db8f94103de258b3ca9619ba</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>103217f8db8f94103de258b3ca9619bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>dharamrajgarad@gmail.com</value>
+        <variable display_value="">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>443217f8db8f94103de258b3ca9619ba</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>943217f8db8f94103de258b3ca9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>Expense Exceed  Alert  </value>
+        <variable display_value="">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>443217f8db8f94103de258b3ca9619ba</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:45</sys_created_on>
+        <sys_id>d03217f8db8f94103de258b3ca9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:45</sys_updated_on>
+        <value>&lt;p&gt;Hi ,&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;your daily Expense  Is exceed more than 800 Rs.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;thanks&lt;/p&gt;</value>
+        <variable display_value="">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=1f2293f8db8f94103de258b3ca9619e2^sys_idNOT IN003217f8db8f94103de258b3ca9619b3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">7d211bfcdb4f94103de258b3ca9619b9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Expense Exceed  Alert  ">1f2293f8db8f94103de258b3ca9619e2</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:44</sys_created_on>
+        <sys_id>003217f8db8f94103de258b3ca9619b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:44</sys_updated_on>
+        <ui_id>fccb8495-c8ef-496b-95fb-393d7c969d79</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=003217f8db8f94103de258b3ca9619b3"/>
+    <sys_element_mapping action="delete_multiple" query="id=003217f8db8f94103de258b3ca9619b3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>003217f8db8f94103de258b3ca9619b3</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:44</sys_created_on>
+        <sys_id>c03217f8db8f94103de258b3ca9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Created or Updated_1.current.expense_cost}}&gt;800</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_1f2293f8db8f94103de258b3ca9619e2^sys_idNOT INcc3217f8db8f94103de258b3ca96192d,eb22d3f8db8f94103de258b3ca961935,f722d3f8db8f94103de258b3ca9619cd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1f2293f8db8f94103de258b3ca9619e2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:44</sys_created_on>
+        <sys_id>cc3217f8db8f94103de258b3ca96192d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1f2293f8db8f94103de258b3ca9619e2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:42</sys_created_on>
+        <sys_id>eb22d3f8db8f94103de258b3ca961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_1f2293f8db8f94103de258b3ca9619e2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-09-02 09:31:43</sys_created_on>
+        <sys_id>f722d3f8db8f94103de258b3ca9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-02 09:31:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="expense_category" table="x_262216_expense_t_expense_tracker" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Salary</label>
+            <language>en</language>
+            <name>x_262216_expense_t_expense_tracker</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-31 08:26:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>90ef6894db0350103de258b3ca9619f8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-31 08:26:12</sys_updated_on>
+            <value>salary</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Kids</label>
+            <language>en</language>
+            <name>x_262216_expense_t_expense_tracker</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-31 08:27:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c10b8d4db0350103de258b3ca9619d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-31 08:27:05</sys_updated_on>
+            <value>kids</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Clothes</label>
+            <language>en</language>
+            <name>x_262216_expense_t_expense_tracker</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-31 08:27:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd403858db0350103de258b3ca9619d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-31 08:27:53</sys_updated_on>
+            <value>clothes</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gifts</label>
+            <language>en</language>
+            <name>x_262216_expense_t_expense_tracker</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-31 08:28:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6b703418dbcf10103de258b3ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-31 08:28:48</sys_updated_on>
+            <value>gifts</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>expense_category</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Outing</label>
+            <language>en</language>
+            <name>x_262216_expense_t_expense_tracker</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-31 08:29:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a3a0f81cdb0350103de258b3ca9619c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-31 08:29:48</sys_updated_on>
+            <value>outing</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>expense_category</element>
+            <name>x_262216_expense_t_expense_tracker</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-31 08:26:12</sys_created_on>
+            <sys_id>dc00705cdbcf10103de258b3ca9619b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>expense_category</sys_name>
+            <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+            <sys_update_name>sys_choice_x_262216_expense_t_expense_tracker_expense_category</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-31 08:26:12</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

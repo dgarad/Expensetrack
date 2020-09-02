@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="expense_category" label="Expense Category" language="en" table="x_262216_expense_t_expense_tracker">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>expense_category</element>
+            <help/>
+            <hint/>
+            <label>Expense Category</label>
+            <language>en</language>
+            <name>x_262216_expense_t_expense_tracker</name>
+            <plural>Expense Categories</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2020-08-31 08:22:38</sys_created_on>
+            <sys_id>1c3f2850db0350103de258b3ca96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Expense Category</sys_name>
+            <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+            <sys_update_name>sys_documentation_x_262216_expense_t_expense_tracker_expense_category_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-08-31 08:22:38</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
