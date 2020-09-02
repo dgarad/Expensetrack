@@ -12,9 +12,9 @@
         <sys_id>108becdcdb4f10103de258b3ca961943</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_package display_value="Expense Tracker App" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_scope display_value="Expense Tracker App">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
         <sys_update_name>sys_aw_renderer_108becdcdb4f10103de258b3ca961943</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-08-31 08:06:32</sys_updated_on>

@@ -78,7 +78,7 @@
     </sysevent_email_action>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</application>
+        <application display_value="Expense Tracker App">60e7681cdb8b10103de258b3ca9619bc</application>
         <file_path/>
         <instance_id>6961a073db939384536ad5b0cf9619e2</instance_id>
         <instance_name>dev66241</instance_name>
@@ -116,10 +116,10 @@
         <sys_metadata>d56bcb78db8794103de258b3ca961933</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Expense  Alert</sys_name>
-        <sys_package display_value="Expense Tracker" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
+        <sys_package display_value="Expense Tracker App" source="x_262216_expense_t">60e7681cdb8b10103de258b3ca9619bc</sys_package>
         <sys_parent display_value="Expense Tracker">ec7eacd8dbcf10103de258b3ca961903</sys_parent>
         <sys_policy/>
-        <sys_scope display_value="Expense Tracker">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
+        <sys_scope display_value="Expense Tracker App">60e7681cdb8b10103de258b3ca9619bc</sys_scope>
         <sys_scope_delete display_value="">7d4031bb7a2846f2804b1bc93c860051</sys_scope_delete>
         <sys_update_name>sysevent_email_action_d56bcb78db8794103de258b3ca961933</sys_update_name>
         <sys_update_version display_value="sysevent_email_action_d56bcb78db8794103de258b3ca961933">995dcf30db8b94103de258b3ca961979</sys_update_version>
